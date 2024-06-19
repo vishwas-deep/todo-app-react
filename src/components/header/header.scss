@@ -1,0 +1,66 @@
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    box-shadow: 0px 1px 4px gray;
+    z-index: 9;
+    position: relative;
+
+    &__left {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .initials {
+            background-color: orange;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            z-index: 9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .name {
+            border: 2px solid black;
+            border-left: none;
+            border-radius: 0px 50px 50px 0px;
+            padding: 2px 8px;
+            position: relative;
+            left: -6px;
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .nav {
+            display: flex;
+
+            a {
+                text-decoration: none;
+                padding: 15px 10px;
+                color: black;
+
+                &:hover {
+                    background-color: rgb(183, 183, 183);
+
+                }
+            }
+        }
+
+        .logout {
+            cursor: pointer;
+            &:hover {
+                color: rgb(255, 0, 68);
+                transition: transform 0.3s ease-in-out;
+            }
+        }
+    }
+
+}

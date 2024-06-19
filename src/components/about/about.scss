@@ -1,0 +1,23 @@
+.about {
+    padding: 50px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+
+    &__section {
+        display: flex;
+        gap: 200px;
+        .img {
+            img {
+                width: 400px;
+                height: 250px;
+            }
+        }
+
+        &__info {
+            width: 400px;
+        }
+
+    }
+}

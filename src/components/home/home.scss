@@ -1,0 +1,195 @@
+.home {
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+
+        .search {
+            input {
+                padding: 5px;
+                border-radius: 4px;
+                border: 1px solid gray;
+
+                &:focus {
+                    outline: none
+                }
+
+                p {
+                    word-break: break-all;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                }
+            }
+        }
+    }
+
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin: 20px;
+
+        .tiles {
+            box-shadow: 0px 0px 4px grey;
+            padding: 8px;
+            width: 200px;
+            height: 250px;
+            background-color: rgb(255 216 90);
+            position: relative;
+
+            .button {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            transition: transform 0.2s ease-in;
+
+            &:hover {
+                transform: scale(1.04);
+            }
+
+            .edit {
+                display: flex;
+                justify-content: flex-end;
+                cursor: pointer;
+
+                &:hover {
+                    color: rgb(64, 0, 255);
+                    transition: transform 0.3s ease-in-out;
+                }
+            }
+
+            .delete {
+                display: flex;
+                justify-content: flex-end;
+                cursor: pointer;
+
+                &:hover {
+                    color: red;
+                    transition: transform 0.3s ease-in-out;
+
+                }
+
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                h4,
+                p {
+                    word-break: break-all;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 6;
+                    -webkit-box-orient: vertical;
+                    max-width: 100%;
+                }
+
+                h4 {
+                    -webkit-line-clamp: 2;
+                }
+            }
+
+            .timestamp {
+                width: 180px;
+                position: absolute;
+                bottom: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .addtask {
+        display: flex;
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        background-color: orange;
+        color: white;
+        padding: 10px;
+        border-radius: 22px;
+        cursor: pointer;
+        border: none;
+        font-weight: bolder;
+
+        &:hover {
+            background-color: rgb(202, 131, 0);
+        }
+    }
+
+    .parent {
+        position: absolute;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .opaque {
+            background-color: rgba(black, 0.4);
+            width: 100vw;
+            height: 100vh;
+            z-index: 10;
+        }
+
+        .main {
+            position: absolute;
+            z-index: 11;
+            background-color: white;
+            border-radius: 4px;
+            box-shadow: 0px 0px 4px grey;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+
+            textarea,
+            input {
+                resize: none;
+                padding: 8px 10px;
+                border: none;
+                border-bottom: 1px solid rgb(171, 168, 168);
+                background: transparent;
+
+                &:focus {
+                    border-bottom: 1px solid rgb(21, 20, 20);
+                    outline: none;
+                }
+            }
+
+            .button {
+                display: flex;
+                gap: 10px;
+                justify-content: flex-end;
+
+                button {
+                    background-color: orange;
+                    color: white;
+                    padding: 10px;
+                    border-radius: 22px;
+                    cursor: pointer;
+                    border: none;
+                    font-weight: bolder;
+
+                    &:hover {
+                        background-color: rgb(202, 131, 0);
+                    }
+                }
+            }
+        }
+    }
+}

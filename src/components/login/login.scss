@@ -1,0 +1,90 @@
+// .form {
+//     // border: 5px solid red;
+//     // width: 100vw;
+//     height: 100vh;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     background-color: rgb(205, 232, 243);
+
+//     .fields {
+//         width: 350px;
+//         background-color: white;
+//         border-radius: 10px;
+//         box-shadow: 0px 0px 4px rgba(#000000, 0.3);
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         padding: 10px;
+//         gap:20px;
+//         input{
+//             padding: 5px;
+//             // border-radius: 10px;
+//             border: none;
+//             outline: none;
+//             border-bottom: 1px solid rgb(132, 131, 131);
+//             &:focus{
+//                 border-bottom: 2px solid rgba(28, 27, 27, 0.971);
+//             }    
+//         }
+//         button{
+//             padding: 10px;
+//             cursor: pointer;
+//             border-radius: 20px;
+//             width: 100px;
+//             border: none;
+//             outline: none;
+//             background-color: rgb(242, 196, 111);
+//             // border-bottom: 1px solid rgb(132, 131, 131);
+//             &:hover{
+//                 color: white;
+//                 background-color: orange;
+//             }    
+//         } 
+//     }
+
+// }
+
+.login {
+    background-color: #16181b;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        background-color: #121417;
+        padding: 20px;
+        border-radius: 5px;
+        color: whitesmoke;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+        width: 270px;
+
+        >div {
+            color: #a59f94;
+
+            &:first-child {
+                font-size: 22px;
+            }
+        }
+
+        button {
+            background: #fffcf2;
+            padding: 15px;
+            outline: none;
+            border: none;
+            border-radius: 6px;
+            color: gray;
+            cursor: pointer;
+            font-size: 26px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+    }
+}

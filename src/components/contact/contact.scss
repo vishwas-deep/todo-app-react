@@ -1,0 +1,53 @@
+.container {
+    background-color: rgb(205, 232, 243);
+    width: 100vw;
+    height: calc(100vh - 92.8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .contact {
+        width: 300px;
+        border-radius: 10px;
+        // border: 1px solid black;
+        box-shadow: 0px 0px 4px rgba(#000000, 0.3);
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        background-color: rgb(255, 255, 255);
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            input,
+            textarea {
+                padding: 5px;
+                border: none;
+                border-bottom: 1px solid rgb(171, 168, 168);
+                background: transparent;
+                resize: none;
+
+                &:focus {
+                    border-bottom: 1px solid rgb(21, 20, 20);
+                    outline: none;
+
+                }
+            }
+
+            button {
+                background-color: rgb(29, 165, 219);
+                color: white;
+                width: 100%;
+                padding: 5px;
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+        }
+
+    }
+}
